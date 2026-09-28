@@ -4,8 +4,14 @@ class Student:
         self.name = name
         self.age = age
 
+    def __str__(self):
+        return f"{self.name} - {self.age}"
+
 student1 = Student("Arun", 20)
 student2 = Student("Rahul", 21)
 
-print(student1.name, student1.age)
-print(student2.name, student2.age)
+# print(student1.name, student1.age)
+# print(student2.name, student2.age)
+
+
+print(student2) 
